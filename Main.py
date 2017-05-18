@@ -16,7 +16,7 @@ GPIO.setup(Motor_1, GPIO.OUT)
 
 pwm = GPIO.PWM(Motor_1, 500)
 
-def worker:
+def worker():
        if(state = 3):
               global state = 1
        else:
@@ -33,7 +33,7 @@ def worker:
        monitor(state)
        sleep(120)
 
-def monitor: 
+def monitor(): 
         
 while True:
        cmd = raw_input("Command:")
